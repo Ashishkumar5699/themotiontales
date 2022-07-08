@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    {% load static %}
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta property="og:title" content="Motion Tales" />
+    <title>Motion Tales</title>
+
+    <link rel="shortcut icon" href="https://www.theweddingfilmer.com/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="https://www.theweddingfilmer.com/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/site/vendor.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/site/app.css' %}" />
+
+</head>
+
+<body data-ng-app="siteApp" data-ng-cloak>
+
+    <header class="master-header">
+        <div>
+            <a href="index.html"><img src="https://www.theweddingfilmer.com/images/twf_logo_small.png"
+                    class="mobile twf-mobile-logo clear" alt="The Wedding Filmer - Logo"></a>
+        </div>
+        <div class="mobile-tab hide">
+            <div id="nav-icon4">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul class="desk-nav" style="flex-direction: row">
+                <li>
+                    <ul class="header-left" >
+                        <li><a href="/" class="nav active">Home</a></li>
+                        <!-- <li><a href="story.html" class="nav ">our story</a></li> -->
+                        <li><a href="work.html" class="nav ">our work</a></li>
+                        <!-- <li><a href="work.html" class="nav ">our crew</a></li> -->
+
+                        <!-- <li><a hr  ef="crew.html" class="nav ">our crew</a></li> -->
+                    </ul>
+                </li>
+                <li class="logo-image"><a href="index.html" class="nav">
+                    <img class="twf-logo" 
+                          src="{% static '/media/images/MOTION TAlES GUNJAN Logo.png' %}"
+                          alt="The Wedding Filmer - Logo"> </a></li>
+                <li>
+                    <ul class="header-right">
+                        <!-- <li><a href="blog.html" class="nav">Images</a></li> -->
+                        <!-- <li><a href="blog.html" class="nav">blog</a></li>
+                        <li><a href="workshop.html" class="nav ">workshops</a></li> -->
+                        <li><a href="contact/create.html" class="nav">blog</a></li>
+                        <!-- <li><a href="contact/create.html" class="nav">workshop</a></li> -->
+                        <li><a href="contact/create.html" class="nav">contact</a></li>
+                        
+                        <!-- <li><a href="faqs.html" class="nav ">FAQ<small>s</small></a></li> -->
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-container">
+        <section class="story-section animatedParent animateOnce">
+            <div class="videos-container">
+                {% for img in Wedding_Images %}
+                <div class="video">
+                    <div class="container">
+                        <div class="video-wrapper">
+                            <!-- <a href="#"
+                                data-url="http://www.youtube.com/embed/Tb1mRMpSMxc?loop=1&amp;rel=0&amp;autoplay=1&amp;showinfo=0"> -->
+                                <img src="/media/{{img.image_file}}" width="500" height="500"
+                                    alt="Lorem Ipsum is simply dummy text of the printing and typesetting industry">
+                                <!-- <div class="play-icon"><img
+                                        src="https://www.theweddingfilmer.com/images/home/play_icon.png"
+                                        alt="The Wedding Filmer - video play icon"></div> -->
+                            </a>
+                        </div>
+                        <div class="description">
+                            <h2 class="animated fadeInUpShort">Lorem Ipsum is simply dummy text of the printing and typesetting industry</h2>
+                            <div class="description-text animated fadeInUpShort">
+                                <p>"{{img.name}}"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                
+            </div>
+        </section>
+
+
+<!-- test start-->
+
+<section class="latest-work-section animatedParent animateOnce" style="width: 100%">
+    <h2 class="heading animated fadeInDownShort">Most popular</h2>
+    <div class="work-list-latest  " id="most-popular-work">
+            {% for img in Wedding_Images %}
+                        <div class="work-latest-parent  " data-id="1">
+                <div class="work" style="background-image: url(/media/{{img.image_file}})">
+                    
+                    <!-- <a href="https://www.theweddingfilmer.com/work/92/dia-vaibhav-nachdi-phirey-the-wedding-filmer"> -->
+                        <div class="work-description">
+                            <!-- <h3> Dia &amp; Vaibhav </h3> -->
+                            <hr/>
+                            <p class="date">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                            <p class="description">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                            </p>
+                            <span  class="view-btn">VIEW</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+            </div>
+    </section>
+
+    <section class="latest-work-section animatedParent animateOnce">
+        <h2 class="heading animated fadeInDownShort">latest work</h2>
+        <div class="work-list-latest " id="latest-work">
+            {% for img in Wedding_Images %}
+                        <div class="work-latest-parent  " data-id="1">
+                    <div class="work" style=" background-image: url(/media/{{img.image_file}})">
+                        
+                        <!-- <a href="https://www.theweddingfilmer.com/work/92/dia-vaibhav-nachdi-phirey-the-wedding-filmer"> -->
+                            <div class="work-description">
+                                <!-- <h3> Dia &amp; Vaibhav </h3> -->
+                                <hr/>
+                                <p class="date">14 February 2022</p>
+                                <p class="description">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                </p>
+                                <span class="view-btn">VIEW</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                {% endfor %}
+                       
+                </div>
+        </section>   
+         <section class="latest-work-section animatedParent animateOnce">
+        <h2 class="heading animated fadeInDownShort">our favourites</h2>
+        <div class="work-list-latest  " id="favourite-work" >
+            {% for img in Wedding_Images %}
+                        <div class="work-latest-parent " data-id="1">
+                    <div class="work" style="background-image: url(/media/{{img.image_file}})">
+    
+                        <!-- <a href="https://www.theweddingfilmer.com/work/89/yeh-aashiqui-patralekhaa-rajkummar"> -->
+                            <div class="work-description">
+                                <!-- <h3> Yeh Aashiqui | Patralekhaa &amp; Rajkumaar </h3> -->
+                                <hr/>
+                                <p class="date"> 01 December 2021 </p>
+                                <p class="description ">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                </p>
+                                <span class="view-btn">VIEW</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                {% endfor %}
+                  
+                </div>
+        </section>    
+        <section class="latest-work-section animatedParent animateOnce" style="width: 100%">
+            <h2 class="heading animated fadeInDownShort">Behind The Scenes</h2>
+            <div class="work-list-latest" id="behind-the-scene">
+                {% for img in Wedding_Images %}
+                                <div class="work-latest-parent" data-id="1">
+                        <div class="work" style="background-image: url(/media/{{img.image_file}})">
+                            
+                            <!-- <a href="https://www.theweddingfilmer.com/work/64/khushnaseeb-hun-bts-vipasha-cj"> -->
+                                <div class="work-description">
+                                    <!-- <h3> Vipasha &amp; CJ </h3> -->
+                                    <hr/>
+                                    <p class="date"> 01 April 2020</p>
+                                    <p class="description">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                    </p>
+                                    <span class="view-btn">VIEW</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    
+                        </div>
+                </section>
+<!-- test end -->
+        <section data-ng-controller="blogController" class="feature-story-section  animatedParent animateOnce">
+            
+
+            <h1 class="heading animated fadeInDownShort">FROM THE BLOG</h1>
+            <!-- <div class="post-wrapper" data-ng-repeat="posts in list">
+                <div class="blog-container" data-ng-repeat="post in posts">
+                    <div class="figure">
+                        <div class="image-wrapper">
+                            <audio controls data-ng-if="post.audioFile">
+                                <source src="#" data-ng-src="[[ post.audioFile | trustedUrl ]]">
+                            </audio>
+                            <div data-ng-if="post.isVideo && post.videoType == 'vimeoid'" id="post-video-parent"
+                                style="height: [[ blogHeight ]]px ;margin-bottom: 1rem;">
+                                <iframe
+                                    data-ng-src="[[ 'https://player.vimeo.com/video/' + post.videoId | trustedUrl ]]"
+                                    width="100%" height="105%" frameborder="0" webkitallowfullscreen mozallowfullscreen
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div data-ng-if="post.isVideo && post.videoType == 'youtubeid'" id="post-video-parent2"
+                                style="height: [[ blogHeight ]]px ;margin-bottom: 1rem;">
+                                <iframe
+                                    data-ng-src="[[ 'https://www.youtube.com/embed/' + post.videoId + '?rel=0&amp;showinfo=0' | trustedUrl ]]"
+                                    width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen
+                                    allowfullscreen></iframe>
+                            </div>
+                            <a data-ng-if="!post.audioFile && !post.isVideo" data-ng-href="[[ post.link ]]" href="#"
+                                target="_blank">
+                                <img src="#" data-ng-src="[[ post.thumbnail_url ]]"
+                                    alt="The Wedding Filmer - [[ post.title ]]">
+                            </a>
+                        </div>
+                        <div class="figcaption">
+                            <a href="#" data-ng-href="[[ post.link ]]" target="_blank"
+                                data-ng-bind-html="post.title | trustAsHtml"></a>
+                        </div>
+                        <div data-ng-bind-html="post.excerpt | trustAsHtml"></div>
+                        <p class="read-more"><a href="#" data-ng-href="[[ post.link ]]" target="_blank">Read More</a>
+                        </p>
+                    </div>
+                </div>
+            </div> -->
+            <div class="load-more" id="load-more" data-ng-hide="list.length >= 3">
+                <div class="wrapper" data-ng-click="loadMore()">
+                    <span class="text">Load More</span> <br>
+                    <span class="arrow animated bounceInDown"><img
+                            src="https://www.theweddingfilmer.com/images/home/down-arrow.png" alt="TWF site"></span>
+                </div>
+            </div>
+            <div class="load-more" data-ng-show="list.length >= 3">
+                <div class="wrapper">
+                    <a class="animated fadeInRight primary-button hov-bk visit-blog" href="blog.html">Visit Our Blog</a>
+                </div>
+            </div>
+        </section>
+        <section class="subscribe-section animatedParent animateOnce">
+            <div class="subscribe-wrapper">
+                <h3 class="animated fadeInDown" data-id="1">Subscribe to our blog </h3>
+                <form action="blog/na_s.html" onsubmit="return newsletter_check(this)" method="post">
+                    <input type="hidden" name="nr" value="widget">
+                    <input class="animated fadeInLeft" type="email" required="" name="ne" placeholder="Enter Email ID"
+                        onclick="if (this.defaultValue==this.value) this.value=''"
+                        onblur="if (this.value=='') this.value=this.defaultValue">
+                    <input class="animated fadeInRight primary-button hov-bk" type="submit" value="Subscribe Now">
+                </form>
+            </div>
+        </section>
+
+        
+    </div>
+    
+    <footer>
+        <div class="footer-section animatedParent animateOnce" data-sequence="500">
+            <p class="left animated fadeInLeftShort" data-id="1">&copy; 2022 | The Wedding Filmer</p>
+            <p class="right animated fadeInRightShort" data-id="1"><a href="sitemap.html">Sitemap</a></p>
+            <div class="social-media">
+                <div class="wrapper">
+                    <span class="animated flipInY" data-id="2"><a href="https://www.facebook.com/theweddingfilmer/"
+                            target="_blank">
+                            <img src="https://www.theweddingfilmer.com/images/home/fb_icon.png"
+                                alt="The Wedding Filmer - The wedding filmer FB"></a></span>
+                    <span class="animated flipInY" data-id="2"><a href="https://twitter.com/TWeddingFilmer"
+                            target="_blank">
+                            <img src="https://www.theweddingfilmer.com/images/home/tw_icon.png"
+                                alt="The Wedding Filmer - The wedding filmer Twitter"></a></span>
+                    <span class="animated flipInY" data-id="2"><a
+                            href="https://www.linkedin.com/company/the-wedding-filmer" target="_blank">
+                            <img src="https://www.theweddingfilmer.com/images/home/ln_icon.png"
+                                alt="The Wedding Filmer - The wedding filmer LinkedIn"></a></span>
+                    <span class="animated flipInY" data-id="2"><a href="https://www.instagram.com/theweddingfilmer/"
+                            target="_blank">
+                            <img src="https://www.theweddingfilmer.com/images/home/insta_icon.png"
+                                alt="The Wedding Filmer - The wedding filmer instagram"></a></span>
+                    <span class="animated flipInY" data-id="2"><a
+                            href="https://www.youtube.com/channel/UCmsd11GSKyWz472NFo4Yz4w" target="_blank">
+                            <img src="https://www.theweddingfilmer.com/images/home/yt_icon.png"
+                                alt="The Wedding Filmer - The wedding filmer youtube"></a></span>
+                    <span class="animated flipInY" data-id="2"><a href="https://vimeo.com/user5508896" target="_blank">
+                            <img src="https://www.theweddingfilmer.com/images/home/vmeo_icon.png"
+                                alt="The Wedding Filmer - The wedding filmer vimoe"></a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--GA code -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-87651849-1"></script>
+    <!-- <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-87651849-1');
+        gtag('config', 'AW-774381738');
+    </script> -->
+    <!--GA code end-->
+    <!-- Scripts -->
+    <!-- <script>
+        var APP = APP || {};
+        APP.baseUrl = "https://www.theweddingfilmer.com/";
+        APP.env = "production";
+        window.Laravel = { "csrfToken": "m3wuhlRtZAIMxiyEbhZpXk3sm8qeHIyHbkjJgJ47" };
+        APP.isMobile = "";
+        APP.isIpad = "";
+        APP.isSafari = "";
+        APP.isHome = "1";
+    </script> -->
+    <script src="https://www.theweddingfilmer.com/js/site/vendor.js"></script>
+    <script src="https://www.theweddingfilmer.com/js/site/site.js?v=20220413225726"></script>
+    <center>
+        <font size="2">This is the free demo result. For a full version of this website, please go to <a
+                href="https://www6.waybackmachinedownloader.com/website-downloader-online/scrape-all-files/">Website
+                Downloader</a></font>
+    </center>
+</body>
+
+</html>

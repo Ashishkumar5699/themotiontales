@@ -744,7 +744,7 @@ input[type="checkbox"], input[type="radio"] {
 
 .button {
   border-radius: 6px;
-  font-family: "Philosopher-Bold", sans-serif;
+  font-family: "Philosopher-Bold";
   font-weight: 700;
   display: inline-block;
   -khtml-box-sizing: border-box;
@@ -1944,7 +1944,7 @@ img {
 }
 
 .article-section .articles .article .figcaption {
-  font-family: "Philosopher-Bold", sans-serif;
+  font-family: "Philosopher-Bold";
   font-size: 2.3rem;
   line-height: 1.2;
   min-height: 3em;
@@ -2115,7 +2115,7 @@ img {
 }
 
 .story-section h1 {
-  font-family: "Philosopher-Bold", sans-serif;
+  font-family: "Philosopher-Bold";
   font-size: 3.5rem;
   line-height: 2;
   text-transform: uppercase;
@@ -2152,7 +2152,7 @@ img {
 }
 
 .story-section .videos-container .video .container .description h2 {
-  font-family: "Philosopher-Bold", sans-serif;
+  font-family: "Philosopher-Bold";
   font-size: 2.8rem;
   line-height: 1.5;
 }
@@ -2234,7 +2234,7 @@ img {
 }
 
 .feature-story-section .heading {
-  font-family: "Philosopher-Bold", sans-serif;
+  font-family: "Philosopher-Bold";
   font-weight: bold;
   font-size: 3.5rem;
   line-height: 2;
@@ -2288,7 +2288,7 @@ img {
 }
 
 .feature-story-section .post-wrapper .blog-container .figure .figcaption {
-  font-family: "Philosopher-Bold", sans-serif;
+  font-family: "Philosopher-Bold";
   font-size: 2.5rem;
   padding: 2rem;
 }
@@ -2409,7 +2409,7 @@ img {
 }
 
 .subscribe-section .subscribe-wrapper h3 {
-  font-family: "Philosopher-Bold", sans-serif;
+  font-family: "Philosopher-Bold";
   font-size: 3.5rem;
   margin-bottom: 3rem;
   line-height: 1;
@@ -2642,7 +2642,7 @@ img {
 
 .latest-work-section h2.heading {
   font-size: 3.5rem;
-  font-family: "Philosopher-Bold", sans-serif;
+  font-family: "Philosopher-Bold";
   color: #505050;
   text-align: center;
   text-transform: uppercase;
@@ -2694,7 +2694,7 @@ img {
 }
 
 .latest-work-section .work-list-latest .work-latest-parent .work .work-description h3 {
-  font-family: "Philosopher-Bold", sans-serif;
+  font-family: "Philosopher-Bold";
   font-size: 2rem;
   color: #FFFFFF;
   font-weight: 900;
@@ -2862,7 +2862,7 @@ img {
 }
 
 .work-description-section .work-heading {
-  font-family: "Philosopher-Bold", sans-serif;
+  font-family: "Philosopher-Bold";
   font-size: 2.8rem;
   color: #333333;
   text-transform: uppercase;
@@ -4155,7 +4155,7 @@ img {
 }
 
 .thanks-section .thanks-wrapper h1 {
-  font-family: "Philosopher-Bold", sans-serif;
+  font-family: "Philosopher-Bold";
   font-size: 4.5rem;
   font-weight: 900;
   text-align: center;
@@ -4226,7 +4226,7 @@ img {
 }
 
 .branch-section .contact-us h1 {
-  font-family: "Philosopher-Bold", sans-serif;
+  font-family: "Philosopher-Bold";
   font-size: 3.5rem;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -4609,7 +4609,7 @@ img {
 }
 
 .faq-section h1.faq-heading {
-  font-family: "Philosopher-Bold", sans-serif;
+  font-family: "Philosopher-Bold";
   font-size: 3.5rem;
   letter-spacing: 3px;
   line-height: 1.5;
@@ -4887,7 +4887,7 @@ img {
 }
 
 .press-section .press-article-section .press-articles .article figcaption {
-  font-family: "Philosopher-Bold", sans-serif;
+  font-family: "Philosopher-Bold";
   font-size: 2.3rem;
   line-height: 1.2;
   min-height: 3em;
@@ -5280,7 +5280,7 @@ img {
 
 .crew-grid .crew-member figure figcaption h3 {
   font-size: 2rem;
-  font-family: "Philosopher-Bold", sans-serif;
+  font-family: "Philosopher-Bold";
   color: #474747;
   margin-bottom: 0.5rem;
 }
@@ -5423,7 +5423,7 @@ img {
 
 .crew-profile .profile-details .personal-info h3.name {
   font-size: 2.4rem;
-  font-family: "Philosopher-Bold", sans-serif;
+  font-family: "Philosopher-Bold";
 }
 
 .crew-profile .profile-details .personal-info h4 {
@@ -5972,3 +5972,5 @@ footer .footer-section .wrapper span a img {
   text-decoration: underline;
   text-transform: capitalize;
 }
+/* testing */
+

@@ -23,3 +23,13 @@ def work(request):
    BehindTheScenes_Images = BehindTheScenes.objects.all()
    context = {'Wedding_Images':Wedding_Images}
    return render(request, "work.html", context)
+
+def stories(request):
+   Wedding_Images = workview.objects.all()
+   context = {'Wedding_Images':Wedding_Images}
+  # return render(request, "stories.html")
+   return render(request, "astories.html", context)
+
+def contact(request):
+   Wedding_Images = workview.objects.all()
+   context = {'Wedding_Images':Wedding_Images}

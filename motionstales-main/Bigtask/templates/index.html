@@ -12,6 +12,12 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/site/vendor.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'css/site/app.css' %}" />
 
+    <style>  
+        p.askedfont {
+            font-family: "Philosopher-Bold";
+        } 
+    </style>
+
 </head>
 
 <body data-ng-app="siteApp" data-ng-cloak>
@@ -19,7 +25,7 @@
     <header class="master-header">
         <div>
             <a href="index.html"><img src="https://www.theweddingfilmer.com/images/twf_logo_small.png"
-                    class="mobile twf-mobile-logo clear" alt="The Wedding Filmer - Logo"></a>
+                    class="mobile twf-mobile-logo clear" alt="# - Logo"></a>
         </div>
         <div class="mobile-tab hide">
             <div id="nav-icon4">
@@ -34,13 +40,13 @@
                     <ul class="header-left" >
                         <li><a href="#" class="nav active" style="font-family: Philosopher-Bold;">Home</a></li>
                         <!-- <li><a href="story.html" class="nav ">our story</a></li> -->
-                        <li><a href="work" class="nav" style="font-family: Philosopher-Bold">our work</a></li>
+                        <li><a href="work.html" class="nav" style="font-family: Philosopher-Bold">our work</a></li>
                         <!-- <li><a href="work.html" class="nav ">our crew</a></li> -->
 
                         <!-- <li><a href="crew.html" class="nav ">our crew</a></li> -->
                     </ul>
                 </li>
-                <li class="logo-image"><a href="/" class="nav">
+                <li class="logo-image"><a href="index.html" class="nav">
                     <img class="twf-logo" 
                           src="{% static '/media/images/MOTION TAlES GUNJAN Logo.png' %}"
                           alt="# - Logo"> </a></li>
@@ -50,8 +56,8 @@
                         <!-- <li><a href="blog.html" class="nav">blog</a></li>
                         <li><a href="workshop.html" class="nav ">workshops</a></li> -->
                         <!-- <li><a href="contact/create.html" class="nav">blog</a></li> -->
-                        <li><a href="stories" class="nav" style="font-family: Philosopher-Bold">stories</a></li>
-                        <li><a href="contact" class="nav" style="font-family: Philosopher-Bold">contact</a></li>
+                        <li><a href="contact/create.html" class="nav" style="font-family: Philosopher-Bold">stories</a></li>
+                        <li><a href="contact/create.html" class="nav" style="font-family: Philosopher-Bold">contact</a></li>
                         
                         <!-- <li><a href="faqs.html" class="nav ">FAQ<small>s</small></a></li> -->
                     </ul>
@@ -70,34 +76,35 @@
             <div class="mobile logo" id="logo">
                 <div class="animated rotateIn delay-500">
                     <img class="logo-img" src="{% static '/media/images/mtaleslogo.png' %}"
-                        alt=" The Wedding Filmer - Logo Image">
+                        alt=" # - Logo Image">
                 </div>
             </div>
             <div class="down-arrow ">
                 <img id="down_arrow" src="https://www.theweddingfilmer.com/images/home/arrow-down.png"
-                    class="animated bounce" alt=" The Wedding Filmer - down arrow">
+                    class="animated bounce" alt=" # - down arrow">
             </div>
         </section>
         <section class="fold2-container animatedParent animateOnce" data-sequence="500">
             <div class="art-container">
-                <img class="cover animated flipInY" data-id="1"
-                    src="https://www.theweddingfilmer.com/images/home/art_image.png"
-                    alt="The Wedding Filmer - Sufi figure icon">
+                <img class="cover animated flipInY" data-id="1" style=" width: 1200px;height: 700px;margin-left: 90px;"
+                    src="{% static '/media/images/image-dance-for-web.png' %}"
+                    alt="# - Sufi figure icon">
             </div>
             <div class="quote-section">
                 <div class=" quote-left animated lightSpeedInLeft" data-id="1">
                     <img class="quotes" src="https://www.theweddingfilmer.com/images/home/quote-left.png"
-                        alt="The Wedding Filmer - Quotes">
+                        alt="# - Quotes">
                 </div>
-                <div class="quote-text">
-                    <div class="animated fadeIn" data-id="2">
-                        <p>Nothing is ever lost to us, as long as we remember it.</p>
+                <div class="quote-text" style="width: 80%;">
+                    <div class="animated fadeIn" style="margin-left: 100px;" data-id="2">
+                        <p style="font-family: Philosopher-Regular; font-size: x-large">"Every great love starts with a great story"</p>
+                        <p style="text-align-last: end; font-family: Philosopher-Regular; font-size: x-large">- Gunjan Singh</p> 
                     </div>
-                    <p class="quote-by animated fadeIn" data-id="2">- Vishal Punjabi</p>
+                    <!-- <p class="quote-by animated fadeIn" data-id="2">- Gunjan Singh</p>  -->
                 </div>
                 <div class="quote-right  animated lightSpeedInRight" data-id="1">
                     <img class="quotes" src="https://www.theweddingfilmer.com/images/home/quote-right.png"
-                        alt="The Wedding Filmer - Quotes">
+                        alt="# - Quotes">
                 </div>
             </div>
         </section>
@@ -108,17 +115,17 @@
                         <a href="https://www.lifestyleasia.com/ind/weddings/the-wedding-filmer-streaming-service-wedflix/"
                             target="_blank">
                             <img data-lazy="{% static '/media/images/articles/article_images/b1PwOZ2h4iYciKk0t6F5YWHWzmUT7OoGAGYDElau.jpeg' %}"
-                                alt="The Wedding Filmer - The Wedding Filmer’s New Streaming Service" src="#">
+                                alt="# - #’s New Streaming Service" src="#">
                         </a>
                     </div>
                     <div class="figcaption">
                         <a href="https://www.lifestyleasia.com/ind/weddings/the-wedding-filmer-streaming-service-wedflix/"
                             target="_blank">
-                            The Wedding Filmer’s New Streaming Service</a>
+                            #’s New Streaming Service</a>
                     </div>
                     <div class="description">
                         <p>Known for their fairytale-esque wedding videography,&nbsp;<a href="index.html"
-                                target="_blank" rel="noopener noreferrer">The Wedding Filmer</a>&nbsp;is set to launch
+                                target="_blank" rel="noopener noreferrer">#</a>&nbsp;is set to launch
                             their own streaming service!</p>
                     </div>
                     <p class="read-more"><a
@@ -131,7 +138,7 @@
                         <a href="https://indianexpress.com/videos/lifestyle-video/world-marriage-day-meet-vishal-punjabi-the-famous-wedding-filmer-of-india-videonews-6130400196001/"
                             target="_blank">
                             <img data-lazy="{% static '/media/images/articles/article_images/lYz3uM2nkbLa8CVkaLbAMonVKcrtCUNlCJnErsTe.jpeg' %}"
-                                alt="The Wedding Filmer - Meet The Famous Wedding Filmer of India" src="#">
+                                alt="# - Meet The Famous Wedding Filmer of India" src="#">
                         </a>
                     </div>
                     <div class="figcaption">
@@ -153,7 +160,7 @@
                         <a href="https://www.wedmegood.com/blog/has-the-wedding-filmer-created-the-perfect-bridal-entry-song-chal-le-chal-premieres-on-wedmegood/"
                             target="_blank">
                             <img data-lazy="{% static '/media/images/articles/article_images/wzlMAScEWi1Pmzm92Z1ljWDGHLTEqcTlOUMZgVlv.jpeg' %}"
-                                alt="The Wedding Filmer - The perfect bridal entry song by TWF" src="#">
+                                alt="# - The perfect bridal entry song by TWF" src="#">
                         </a>
                     </div>
                     <div class="figcaption">
@@ -176,7 +183,7 @@
                         <a href="https://thecrimsonbride.com/tips-trends/vekheya-the-sikh-wedding-song-by-the-wedding-filmer/"
                             target="_blank">
                             <img data-lazy="{% static '/media/images/articles/article_images/BBb5Zqqnr5wnfusE317IkTdoV3W3umaWOifQxr4g.jpeg' %}"
-                                alt="The Wedding Filmer - ‘Vekheya’ Will Make Your Hearts Flutter" src="#">
+                                alt="# - ‘Vekheya’ Will Make Your Hearts Flutter" src="#">
                         </a>
                     </div>
                     <div class="figcaption">
@@ -197,7 +204,7 @@
                         <a href="https://thecrimsonbride.com/tips-trends/wedding-trailer-meri-yaadein-of-mayesha-and-sheahan-by-the-wedding-filmer/"
                             target="_blank">
                             <img data-lazy="{% static '/media/images/articles/article_images/yLKqfMmHeRoXEt3ukTjusqWPyMv5tlAQlGER3vIu.jpeg' %}"
-                                alt="The Wedding Filmer - A Blissful Wedding Trailer of Hope &amp; Love" src="#">
+                                alt="# - A Blissful Wedding Trailer of Hope &amp; Love" src="#">
                         </a>
                     </div>
                     <div class="figcaption">
@@ -219,7 +226,7 @@
                         <a href="https://www.goodhomes.co.in/home-and-design-trends/trendsmakers/feels-like-home-6013-4.html"
                             target="_blank">
                             <img data-lazy="{% static '/media/images/articles/article_images/wX7KpLqpdfesLKuHLCiipAOzbSqKiHUehLF1U3Bk.jpeg' %}"
-                                alt="The Wedding Filmer - Feels Like Home" src="#">
+                                alt="# - Feels Like Home" src="#">
                         </a>
                     </div>
                     <div class="figcaption">
@@ -240,12 +247,12 @@
                     <div class="article-image article1">
                         <a href="https://www.youtube.com/watch?v=lhpBP4BZj2Y&amp;t=4s" target="_blank">
                             <img data-lazy="{% static '/media/images/articles/article_images/pudutScvfhpXdwrbcHhLqugWfmSrRNuRvfLfJuXh.jpeg' %}"
-                                alt="The Wedding Filmer - The Wedding Filmer on CNN" src="#">
+                                alt="# - # on CNN" src="#">
                         </a>
                     </div>
                     <div class="figcaption">
                         <a href="https://www.youtube.com/watch?v=lhpBP4BZj2Y&amp;t=4s" target="_blank">
-                            The Wedding Filmer on CNN</a>
+                            # on CNN</a>
                     </div>
                     <div class="description">
                         <p>Watch my interview with Rituraj Sharma on CNN about weddings, technology and the importance
@@ -260,7 +267,7 @@
                         <a href="https://www.lifestyleasia.com/ind/weddings/how-to-pick-the-perfect-videographer-for-your-wedding-by-the-wedding-filmer/"
                             target="_blank">
                             <img data-lazy="{% static '/media/images/articles/article_images/OqvJx3BE7QLKU2jrFnTYGwU93ojbCsDdAWz2Scvp.jpeg' %}"
-                                alt="The Wedding Filmer - How To Pick The Perfect Wedding Videographer" src="#">
+                                alt="# - How To Pick The Perfect Wedding Videographer" src="#">
                         </a>
                     </div>
                     <div class="figcaption">
@@ -282,7 +289,7 @@
                         <a href="https://thecrimsonbride.com/tips-trends/the-wedding-filmer-peer-vi-tu-from-virat-anushka-wedding-video/"
                             target="_blank">
                             <img data-lazy="{% static '/media/images/articles/article_images/rJtX2Y05tnoXt52TDSC9WLg8E7zoZFniz44p76ya.jpeg' %}"
-                                alt="The Wedding Filmer - ‘Peer Vi Tu’ Is Finally Here" src="#">
+                                alt="# - ‘Peer Vi Tu’ Is Finally Here" src="#">
                         </a>
                     </div>
                     <div class="figcaption">
@@ -303,15 +310,15 @@
                     <div class="article-image article1">
                         <a href="https://www.youtube.com/watch?v=JS0d_TerYY0" target="_blank">
                             <img data-lazy="{% static '/media/images/articles/article_images/j6T1AsWkOXMqDnuEcUefvK0wC45ee1xiQoiaJoTV.jpeg' %}"
-                                alt="The Wedding Filmer - 38 Questions with The Wedding Filmer" src="#">
+                                alt="# - 38 Questions with #" src="#">
                         </a>
                     </div>
                     <div class="figcaption">
                         <a href="https://www.youtube.com/watch?v=JS0d_TerYY0" target="_blank">
-                            38 Questions with The Wedding Filmer</a>
+                            38 Questions with #</a>
                     </div>
                     <div class="description">
-                        <p>Get an insight into the world of The Wedding Filmer and the man who started it all.&nbsp;</p>
+                        <p>Get an insight into the world of # and the man who started it all.&nbsp;</p>
                     </div>
                     <p class="read-more"><a href="https://www.youtube.com/watch?v=JS0d_TerYY0" target="_blank">Read
                             More</a></p>
@@ -322,7 +329,7 @@
                         <a href="https://www.youtube.com/watch?v=munvdDn4LyQ&amp;list=PL-4ZdIQzaAFXlT072I1xywn9pq9W7vuKZ&amp;index=3&amp;t=1s"
                             target="_blank">
                             <img data-lazy="{% static '/media/images/articles/article_images/w5i3aMfaUSYXksdceLdi6SOGYlXyCcj0X1haDWvV.jpeg' %}"
-                                alt="The Wedding Filmer - Exclusive Interview with Mid-Day India" src="#">
+                                alt="# - Exclusive Interview with Mid-Day India" src="#">
                         </a>
                     </div>
                     <div class="figcaption">
@@ -343,7 +350,7 @@
                     <div class="article-image article1">
                         <a href="https://www.thepeacockmagazine.com/the-wedding-filmer-vishal-punjabi/" target="_blank">
                             <img data-lazy="{% static '/media/images/articles/article_images/eRmjAAOf66mXjCPOrwrBBTnMQgz1pZk20t40dFqo.jpeg' %}"
-                                alt="The Wedding Filmer - A Chat With Wedding Maestro - Vishal Punjabi!" src="#">
+                                alt="# - A Chat With Wedding Maestro - Vishal Punjabi!" src="#">
                         </a>
                     </div>
                     <div class="figcaption">
@@ -363,16 +370,16 @@
                         <a href="https://www.thequint.com/neon/fun/deepika-ranveer-priyanka-nick-celebrity-wedding-rumours-inside-photos"
                             target="_blank">
                             <img data-lazy="{% static '/media/images/articles/article_images/F4FgsOdRqlp6EHXcNB7MS738uzSbeUJgAWpzDU1A.jpeg' %}"
-                                alt="The Wedding Filmer - DeepVeer’s Wedding Shot By The Wedding Filmer?" src="#">
+                                alt="# - DeepVeer’s Wedding Shot By #?" src="#">
                         </a>
                     </div>
                     <div class="figcaption">
                         <a href="https://www.thequint.com/neon/fun/deepika-ranveer-priyanka-nick-celebrity-wedding-rumours-inside-photos"
                             target="_blank">
-                            DeepVeer’s Wedding Shot By The Wedding Filmer?</a>
+                            DeepVeer’s Wedding Shot By #?</a>
                     </div>
                     <div class="description">
-                        <p>A lot of speculations have been made all over the news about &ldquo;The Wedding Filmer"
+                        <p>A lot of speculations have been made all over the news about &ldquo;#"
                             shooting the DeepVeer&rsquo;s wedding.</p>
                     </div>
                     <p class="read-more"><a
@@ -385,7 +392,7 @@
                         <a href="https://www.scoopwhoop.com/people-behind-the-dreamy-virushka-wedding/#.da4uwzxc1"
                             target="_blank">
                             <img data-lazy="{% static '/media/images/articles/article_images/sH3EYjGsxfEFWwJonA6qnXBUsJsp6ShiSEAYFI98.jpeg' %}"
-                                alt="The Wedding Filmer - Wedding Film Of The Decade #Virushka" src="#">
+                                alt="# - Wedding Film Of The Decade #Virushka" src="#">
                         </a>
                     </div>
                     <div class="figcaption">
@@ -407,7 +414,7 @@
                         <a href="https://www.mensxp.com/special-features/features/57083-how-to-get-the-perfect-budget-friendly-wedding-film-ft-the-man-behind-virushka-rsquo-s-magical-video.html"
                             target="_blank">
                             <img data-lazy="{% static '/media/images/articles/article_images/SQQah2IMzHzM4pfrtgO7mwZxQiNWDWdWtS5JuZGE.jpeg' %}"
-                                alt="The Wedding Filmer - How To Get The Best Budget-Friendly Wedding Film" src="#">
+                                alt="# - How To Get The Best Budget-Friendly Wedding Film" src="#">
                         </a>
                     </div>
                     <div class="figcaption">
@@ -429,7 +436,7 @@
                         <a href="https://www.scoopwhoop.com/fashion/virushka-wedding-is-still-the-best/"
                             target="_blank">
                             <img data-lazy="{% static '/media/images/articles/article_images/qEWibyQoMaiLXR62gZNAvj8OLzhqaWUL6lbnjuwb.jpeg' %}"
-                                alt="The Wedding Filmer - Virat &amp; Anushka&#039;s Dreamy Wedding Set The Benchmark"
+                                alt="# - Virat &amp; Anushka&#039;s Dreamy Wedding Set The Benchmark"
                                 src="#">
                         </a>
                     </div>
@@ -452,7 +459,7 @@
                         <a href="https://www.youtube.com/watch?v=tfpx9brefT8&amp;list=PL-4ZdIQzaAFXlT072I1xywn9pq9W7vuKZ"
                             target="_blank">
                             <img data-lazy="{% static '/media/images/articles/article_images/KdwI3soK0jRYXvTENlPV6dAb24OWDJ0qZ7j73R4M.jpeg' %}"
-                                alt="The Wedding Filmer - Exclusive Interview with The Quint" src="#">
+                                alt="# - Exclusive Interview with The Quint" src="#">
                         </a>
                     </div>
                     <div class="figcaption">
@@ -474,7 +481,7 @@
                         <a href="https://www.bollywoodshaadis.com/articles/wedding-trailer-of-bipasha-basu-and-karan-singh-grover-is-pure-love-6730"
                             target="_blank">
                             <img data-lazy="{% static '/media/images/articles/article_images/1z3YHnPMaq6Uu30mWxVM9vf4Mws1Pd0b4iXsKyNg.jpeg' %}"
-                                alt="The Wedding Filmer - Bipasha &amp; Karan Like Never Seen Before" src="#">
+                                alt="# - Bipasha &amp; Karan Like Never Seen Before" src="#">
                         </a>
                     </div>
                     <div class="figcaption">
@@ -496,17 +503,17 @@
                         <a href="https://yourstory.com/weekender/vishal-punjabi-shah-rukh-khan-wedding-filmer"
                             target="_blank">
                             <img data-lazy="{% static '/media/images/articles/article_images/tt4L4faANwdRxpWrkukWnjr55lqwEOktybaPchxG.jpeg' %}"
-                                alt="The Wedding Filmer - The Journey To Becoming The Wedding Filmer" src="#">
+                                alt="# - The Journey To Becoming #" src="#">
                         </a>
                     </div>
                     <div class="figcaption">
                         <a href="https://yourstory.com/weekender/vishal-punjabi-shah-rukh-khan-wedding-filmer"
                             target="_blank">
-                            The Journey To Becoming The Wedding Filmer</a>
+                            The Journey To Becoming #</a>
                     </div>
                     <div class="description">
                         <p>Here's how a phone call from Shah Rukh Khan kickstarted the journey for Vishal Punjabi, the
-                            man behind The Wedding Filmer.&nbsp;</p>
+                            man behind #.&nbsp;</p>
                     </div>
                     <p class="read-more"><a
                             href="https://yourstory.com/weekender/vishal-punjabi-shah-rukh-khan-wedding-filmer"
@@ -517,13 +524,13 @@
                     <div class="article-image article1">
                         <a href="https://www.youtube.com/watch?v=IIWI_dnFzwc" target="_blank">
                             <img data-lazy="{% static '/media/images/articles/article_images/D10aULPRT9mKbMhJJADOrpr0nYkHgecVmZub1F8V.jpeg' %}"
-                                alt="The Wedding Filmer - The Wedding Filmer On Shooting Movies &amp; Web Series"
+                                alt="# - # On Shooting Movies &amp; Web Series"
                                 src="#">
                         </a>
                     </div>
                     <div class="figcaption">
                         <a href="https://www.youtube.com/watch?v=IIWI_dnFzwc" target="_blank">
-                            The Wedding Filmer On Shooting Movies & Web Series</a>
+                            # On Shooting Movies & Web Series</a>
                     </div>
                     <div class="description">
                         <p>Watch me talk about what went behind shooting Maheroo, Made In Heaven and YJHD.&nbsp;</p>
@@ -536,7 +543,7 @@
                     <div class="article-image article1">
                         <a href="https://www.youtube.com/watch?v=IyEDBmqQSMQ" target="_blank">
                             <img data-lazy="{% static '/media/images/articles/article_images/bhS523yX3whmmwhEMpX8gGfzAcYA8MpPPHIwd2h8.jpeg' %}"
-                                alt="The Wedding Filmer - Exclusive Interview with E24" src="#">
+                                alt="# - Exclusive Interview with E24" src="#">
                         </a>
                     </div>
                     <div class="figcaption">
@@ -555,7 +562,7 @@
                     <div class="article-image article1">
                         <a href="https://www.youtube.com/watch?v=jYBMoQOkOH4&amp;t=7s" target="_blank">
                             <img data-lazy="{% static '/media/images/articles/article_images/EwkcmhqYnKgqxt7D7j4Yq0HSS6YBkrN0njRvyvKx.jpeg' %}"
-                                alt="The Wedding Filmer - Peer Vi Tu Is Finally Out" src="#">
+                                alt="# - Peer Vi Tu Is Finally Out" src="#">
                         </a>
                     </div>
                     <div class="figcaption">
@@ -576,7 +583,7 @@
                         <a href="https://thecrimsonbride.com/realweddings/whimsical-wedding-with-a-surreal-decor-an-adorable-couple-bengaluru-dallas-riccha-andrew/"
                             target="_blank">
                             <img data-lazy="{% static '/media/images/articles/article_images/6Rx5BF0T7JveYWvbLz86OlhmHjcAqxdSQeNHWi3C.jpeg' %}"
-                                alt="The Wedding Filmer - A Wedding That Will Take Your Breath Away!" src="#">
+                                alt="# - A Wedding That Will Take Your Breath Away!" src="#">
                         </a>
                     </div>
                     <div class="figcaption">
@@ -596,7 +603,7 @@
                     <div class="article-image article1">
                         <a href="https://brideclubme.com/articles/wedding-video-by-the-wedding-filmer/" target="_blank">
                             <img data-lazy="{% static '/images/articles/article_images/Zrsk9gx1qYgNjqq0xf4Om4z2SYbh8xKmzobbqcpa.jpeg' %}"
-                                alt="The Wedding Filmer - OMG! A Love Story Involving Pets" src="#">
+                                alt="# - OMG! A Love Story Involving Pets" src="#">
                         </a>
                     </div>
                     <div class="figcaption">
@@ -615,7 +622,7 @@
                     <div class="article-image article1">
                         <a href="https://www.vogue.in/content/how-you-want-your-wedding-filmed/" target="_blank">
                             <img data-lazy="{% static '/media/images/articles/article_images/75a5ymP1cMguNBq5ZtT4GrtLDH4KUqeGWr0FnCUX.jpeg' %}"
-                                alt="The Wedding Filmer - This Is How You Want Your Wedding Filmed" src="#">
+                                alt="# - This Is How You Want Your Wedding Filmed" src="#">
                         </a>
                     </div>
                     <div class="figcaption">
@@ -635,7 +642,7 @@
                         <a href="https://www.popxo.com/2018/01/title-track-arziyaan-bipasha-karan-wedding/"
                             target="_blank">
                             <img data-lazy="{% static '/media/images/articles/article_images/ynKL9klRyKKfvPuJRlRWYsOnGiq5kiGT7j7WNv4a.jpeg' %}"
-                                alt="The Wedding Filmer - Creatively Consistent: Best Bridal Entry Song!" src="#">
+                                alt="# - Creatively Consistent: Best Bridal Entry Song!" src="#">
                         </a>
                     </div>
                     <div class="figcaption">
@@ -657,7 +664,7 @@
                         <a href="https://www.zankyou.co.in/p/everything-you-need-to-know-about-wedding-videos"
                             target="_blank">
                             <img data-lazy="{% static '/media/images/articles/article_images/qfgVrvl3QYOevpaqRBy6Z4OrRanN9KaM75jR8CIa.jpeg' %}"
-                                alt="The Wedding Filmer - Vishal Punjabi Answers All A Bride Needs To Know" src="#">
+                                alt="# - Vishal Punjabi Answers All A Bride Needs To Know" src="#">
                         </a>
                     </div>
                     <div class="figcaption">
@@ -679,7 +686,7 @@
                         <a href="https://www.hindustantimes.com/more-lifestyle/the-wedding-filmer-reveals-hacks-to-shoot-the-perfect-wedding-video/story-dLGYu2QoW59KHXMx1FMOVM.html"
                             target="_blank">
                             <img data-lazy="{% static '/media/images/articles/article_images/wPiPPXeM6KR2utfDW5YxWcwSxKGbTydeNfys766U.jpeg' %}"
-                                alt="The Wedding Filmer - How To Shoot The Perfect Wedding FIlm" src="#">
+                                alt="# - How To Shoot The Perfect Wedding FIlm" src="#">
                         </a>
                     </div>
                     <div class="figcaption">
@@ -688,7 +695,7 @@
                             How To Shoot The Perfect Wedding FIlm</a>
                     </div>
                     <div class="description">
-                        <p>Remember the wedding sequence in Yeh Jawaani Hai Deewani? The Wedding Filmer, who shot it,
+                        <p>Remember the wedding sequence in Yeh Jawaani Hai Deewani? #, who shot it,
                             shares videography hacks for budding filmmakers.</p>
                     </div>
                     <p class="read-more"><a
@@ -701,7 +708,7 @@
                         <a href="https://www.scoopwhoop.com/the-wedding-filmer-celeb-weddings/#.9zx4eku8r"
                             target="_blank">
                             <img data-lazy="{% static '/media/images/articles/article_images/m58jHMl78lo9RHIXRueJbnhP9nR1O1qnkowuMZuR.jpeg' %}"
-                                alt="The Wedding Filmer - The Team That’s Making Celeb Weddings" src="#">
+                                alt="# - The Team That’s Making Celeb Weddings" src="#">
                         </a>
                     </div>
                     <div class="figcaption">
@@ -722,7 +729,7 @@
                         <a href="https://www.firstpost.com/entertainment/made-in-heaven-review-this-sumptuous-take-on-the-big-fat-indian-wedding-has-a-strong-emotional-core-6196291.html"
                             target="_blank">
                             <img data-lazy="{% static '/media/images/articles/article_images/xseAChxa5Age7biyztfXoOrVP4YJewozBHcjTIAb.jpeg' %}"
-                                alt="The Wedding Filmer - Made in Heaven inspired by TWF" src="#">
+                                alt="# - Made in Heaven inspired by TWF" src="#">
                         </a>
                     </div>
                     <div class="figcaption">
@@ -732,7 +739,7 @@
                     </div>
                     <div class="description">
                         <p>The idea came about when Zoya Akhtar and Reema Kagti saw videos of India's best wedding
-                            videographers, The Wedding Filmer.&nbsp;</p>
+                            videographers, #.&nbsp;</p>
                     </div>
                     <p class="read-more"><a
                             href="https://www.firstpost.com/entertainment/made-in-heaven-review-this-sumptuous-take-on-the-big-fat-indian-wedding-has-a-strong-emotional-core-6196291.html"
@@ -744,7 +751,7 @@
                         <a href="https://www.wedmegood.com/blog/the-wedding-filmers-first-ever-telugu-song-bandhamey-will-surely-melt-your-hearts/"
                             target="_blank">
                             <img data-lazy="{% static '/media/images/articles/article_images/DWHDCltAkSyIm2iMzUFlBYrbNVjemJOctXmh3yQw.jpeg' %}"
-                                alt="The Wedding Filmer - &#039;Bandhamey&#039; Personalised Telugu Song By TWF"
+                                alt="# - &#039;Bandhamey&#039; Personalised Telugu Song By TWF"
                                 src="#">
                         </a>
                     </div>
@@ -767,7 +774,7 @@
                         <a href="https://weddingz.in/blog/this-groom-has-won-our-hearts-in-this-latest-the-wedding-filmer-video-wzexclusive_1/"
                             target="_blank">
                             <img data-lazy="{% static '/media/images/articles/article_images/b1p2TtTW0k6GP4Ja61Xk1o1OmfwjX8PN77UlwlSd.jpeg' %}"
-                                alt="The Wedding Filmer - How Sweet It Is By Rohan Singh" src="#">
+                                alt="# - How Sweet It Is By Rohan Singh" src="#">
                         </a>
                     </div>
                     <div class="figcaption">
@@ -790,7 +797,7 @@
             </div>
         </section> -->
         <section class="story-section animatedParent animateOnce">
-            <h1 class="animated fadeInDownShort">RECENT WORK</h1>
+            <h1 class="animated fadeInDownShort" style="font-family: Philosopher-Bold;">RECENT WORK</h1>
             <div class="videos-container">
                 {% for img in Wedding_Images %}
                 <div class="video">
@@ -802,7 +809,7 @@
                                     alt="Lorem Ipsum is simply dummy text of the printing and typesetting industry">
                                 <!-- <div class="play-icon"><img
                                         src="https://www.theweddingfilmer.com/images/home/play_icon.png"
-                                        alt="The Wedding Filmer -  play icon"></div> -->
+                                        alt="# -  play icon"></div> -->
                             </a>
                         </div>
                         <div class="description">
@@ -818,7 +825,7 @@
             </div>
         </section>
         <section data-ng-controller="blogController" class="feature-story-section  animatedParent animateOnce">
-            <h1 class="heading animated fadeInDownShort">FROM THE BLOG</h1>
+            <h1 class="heading animated fadeInDownShort" style="font-family: Philosopher-Bold;">FROM THE BLOG</h1>
             <div class="post-wrapper" data-ng-repeat="posts in list">
                 <div class="blog-container" data-ng-repeat="post in posts">
                     <div class="figure">
@@ -843,7 +850,7 @@
                             <a data-ng-if="!post.audioFile && !post.isVideo" data-ng-href="[[ post.link ]]" href="#"
                                 target="_blank">
                                 <img src="#" data-ng-src="[[ post.thumbnail_url ]]"
-                                    alt="The Wedding Filmer - [[ post.title ]]">
+                                    alt="# - [[ post.title ]]">
                             </a>
                         </div>
                         <div class="figcaption">
@@ -884,33 +891,17 @@
     </div>
     <footer>
         <div class="footer-section animatedParent animateOnce" data-sequence="500">
-            <p class="left animated fadeInLeftShort" data-id="1">&copy; 2022 | The Motion tales</p>
-            <p class="right animated fadeInRightShort" data-id="1"><a href="sitemap.html">Sitemap</a></p>
+            <p class="left animated fadeInLeftShort" data-id="1">&copy; 2022 | The Motion Tales</p>
             <div class="social-media">
                 <div class="wrapper">
-                    <span class="animated flipInY" data-id="2"><a href="https://www.facebook.com/theweddingfilmer/"
+                    <span class="animated flipInY" data-id="2"><a href="https://www.facebook.com/themotiontales"
                             target="_blank">
                             <img src="https://www.theweddingfilmer.com/images/home/fb_icon.png"
-                                alt="The Wedding Filmer - The wedding filmer FB"></a></span>
-                    <span class="animated flipInY" data-id="2"><a href="https://twitter.com/TWeddingFilmer"
-                            target="_blank">
-                            <img src="https://www.theweddingfilmer.com/images/home/tw_icon.png"
-                                alt="The Wedding Filmer - The wedding filmer Twitter"></a></span>
-                    <span class="animated flipInY" data-id="2"><a
-                            href="https://www.linkedin.com/company/the-wedding-filmer" target="_blank">
-                            <img src="https://www.theweddingfilmer.com/images/home/ln_icon.png"
-                                alt="The Wedding Filmer - The wedding filmer LinkedIn"></a></span>
-                    <span class="animated flipInY" data-id="2"><a href="https://www.instagram.com/theweddingfilmer/"
+                                alt="# - # FB"></a></span>
+                    <span class="animated flipInY" data-id="2"><a href="https://www.instagram.com/themotiontales/"
                             target="_blank">
                             <img src="https://www.theweddingfilmer.com/images/home/insta_icon.png"
-                                alt="The Wedding Filmer - The wedding filmer instagram"></a></span>
-                    <span class="animated flipInY" data-id="2"><a
-                            href="https://www.youtube.com/channel/UCmsd11GSKyWz472NFo4Yz4w" target="_blank">
-                            <img src="https://www.theweddingfilmer.com/images/home/yt_icon.png"
-                                alt="The Wedding Filmer - The wedding filmer youtube"></a></span>
-                    <span class="animated flipInY" data-id="2"><a href="https://vimeo.com/user5508896" target="_blank">
-                            <img src="https://www.theweddingfilmer.com/images/home/vmeo_icon.png"
-                                alt="The Wedding Filmer - The wedding filmer vimoe"></a></span>
+                                alt="# - # instagram"></a></span>
                 </div>
             </div>
         </div>
@@ -937,7 +928,7 @@
         APP.isHome = "1";
     </script>
     <script src="https://www.theweddingfilmer.com/js/site/vendor.js"></script>
-    <script src="https://www.theweddingfilmer.com/js/site/site.js?v=20220413225726"></script>
+    <script src="https://www.theweddingfilmer.com/js/site/site.js?v=#0413225726"></script>
     <center>
         <font size="2">This is the free demo result. For a full version of this website, please go to <a
                 href="https://www6.waybackmachinedownloader.com/website-downloader-online/scrape-all-files/">Website
